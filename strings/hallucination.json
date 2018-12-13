@@ -128,16 +128,16 @@
 		"rogue",
 		"cult",
 		"a cultist",
-		"clockcult",
-		"a clock cultist",
-		"a revhead",
-		"a rev",
+		"cult",
+		"Murder!",
+		"Raider Leader",
+		"a Raider!",
 		"a gang leader",
-		"a gangster",
+		"a Spy!",
 		"a traitor",
-		"a tator",
-		"a ling",
-		"a changeling"
+		"a traitor",
+		"a Chinese Spy!",
+		"a Chinese!"
 	],
 
 	"threat": [
@@ -248,7 +248,8 @@
 		"Phlebotinium",
 		"Mana",
 		"Energy",
-		"?????"
+		"?????",
+		"Plasma"
 	]
 
 }
