@@ -3,7 +3,8 @@
 		"@pick(add_name)i'm watching you...",
 		"@pick(add_name)i know what you're doing",
 		"@pick(add_name)what are you hiding?",
-		"I saw that"
+		"I saw that",
+		"@pick(add_name) Halt!"
 	],
 	
 	"conversation": [
@@ -109,16 +110,16 @@
 	],
 
 	"people": [
-		"Captain",
-		"Hos",
-		"Cmo",
-		"Rd",
-		"Ce",
-		"Hop",
-		"Janitor",
-		"AI",
-		"Viro",
-		"Qm",
+		"Wastela",
+		"Vaulties",
+		"Brotherhood of Steel",
+		"Den Folk",
+		"Legion",
+		"NCR",
+		"Rangers",
+		"Robots",
+		"Raiders",
+		"Ghouls",
 		"%TARGETNAME%"
 	],
 
