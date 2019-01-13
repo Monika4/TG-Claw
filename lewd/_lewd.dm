@@ -9,6 +9,7 @@
 #define GRINDING_MOUTH_WITH_FEET "mouthfeet"
 #define THIGH_SMOTHERING "thigh_smother"
 #define NUTS_TO_FACE "nut_face"
+#define NECK_LICK "neck_lick"
 
 #define NORMAL_LUST 10
 #define LOW_LUST 1
@@ -139,7 +140,9 @@
 				else
 
 					message = "reaches their peak, locking their legs around \the [partner]'s head extra hard as they cum straight onto the head stuck between their thighs"
-					
+	if(NECK_LICK)
+		message = "passionately licks [partner] in great pleasure."
+	
 			else
 				message = "cums on the floor!"
 
@@ -215,6 +218,26 @@
   ---------------LEWD PROCESS DATUM-----------------
   --------------------------------------------------
  */
+
+/mob/proc/neck_lick(mob/partner)
+	var/message
+	var/lust_increase = NORMAL_LUST
+	if(partner.is_fucking(src, NECK_LICK)) // Aids Code for Request Discord 
+		if(prob(partner.sexual_potency))
+			var/mob/living/carbon/human/h = src
+		message = "seductively licks [partner] on the neck."
+	
+	
+	
+	playsound(get_turf(src), "honk/sound/interactions/bj[rand(1, 11)].ogg", 50, 1, -1)
+	visible_message("<font color=purple><b>\The [src]</b> [message]</font>")
+	partner.handle_post_sex(lust_increase, NECK_LICK, src)
+	partner.dir = get_dir(partner,src)
+	do_fucking_animation(get_dir(src, partner))
+	lust_increase = NORMAL_LUST //RESET IT REE
+
+
+
 
 /mob/proc/do_oral(mob/partner)
 	var/message
