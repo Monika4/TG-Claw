@@ -291,3 +291,17 @@
 
 /datum/interaction/lewd/nuts/display_interaction(var/mob/user, var/mob/target)
 	user.nut_face(target)
+	
+
+/datum/interaction/lewd/neck/
+	command = "neck_lick"
+	description = "Lick their neck"
+	interaction_sound = null
+	max_distance = 1
+	write_log_user = "Licked their Neck"
+	write_log_target = "was made to have their neck licked"
+	
+/datum/interaction/lewd/neck/display_interaction(var/mob/user, var/mob/target)
+	user.neck_lick(targert)
+
+
