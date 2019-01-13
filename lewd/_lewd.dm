@@ -141,10 +141,10 @@
 
 					message = "reaches their peak, locking their legs around \the [partner]'s head extra hard as they cum straight onto the head stuck between their thighs"
 			if(NECK_LICK)
-				message = "passionately licks [partner] in great pleasure."
+				message = "passionately licks \the [partner] in great pleasure."
 		
-			else
-				message = "cums on the floor!"
+		else
+			message = "cums on the floor!"
 
 		lust = 5
 		lust_tolerance += 50
